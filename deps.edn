@@ -1,0 +1,9 @@
+{:aliases {:jar {:extra-deps {seancorfield/depstar {:mvn/version "RELEASE"}}
+                 :main-opts ["-m" "hf.depstar.jar" "target/lib.jar"]}
+           :install {:extra-deps {deps-deploy {:mvn/version "RELEASE"}}
+                     :main-opts ["-m" "deps-deploy.deps-deploy" "install" "target/lib.jar" "true"]}
+           :deploy {:extra-deps {deps-deploy {:mvn/version "RELEASE"}}
+                    :main-opts ["-m" "deps-deploy.deps-deploy" "deploy" "target/lib.jar" "true"]}}
+ :paths ["src"]
+ :deps
+ {}}
